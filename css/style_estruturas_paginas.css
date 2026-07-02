@@ -1,109 +1,205 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: url('../imagens/');
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    margin: 0px;
+  
+    padding: 0px;
+    width: 100%;
+}
 
 
 
 *{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: roboto ;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Barlow;
 }
 
 :root{
- --cor-principal: #f1db93;
- --cor-botao01: #17e404;
- --cor-link-menu: #1e9cc2;
- --cor-botao-cor_vermellha: #f54949;
+    --cor_principal:#e7c376;
+    --cor_botao01:#bfff8a;
+    --cor_lnk_menu:#ffffff;
+    --cor_actev:#31c3dd;
 }
 
-#geral{
- margin: 20px;
- padding: 20px;
-
-}
-/*CONFIGURANDO CABECALHO*/
-
-#cabecalho{
+#geral {
   width: 100%;
-  background-color: var(--cor-principal);
-  padding: 5px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-} 
-/*CONFIGURANDO A LOGO*/
-#logo img{
- width: 250px;
- height: 160px;
+}
+#cabecalho {
+  width: 1000px;             
+  height: 150px;            
+  background-color: var(--cor_principal);
+  padding: 0 20px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  box-sizing: border-box;
 }
 
-/*CONFIGURANDO O MENU*/
-
-#menu{
- width: 600px;
- height: 240px;
- display: flex;
- align-items: center;
- justify-content: center;
+#logo img {
+  width: 100px;             
+  height: 100px;
+  object-fit: contain;
 }
-/*CONFIGURANDO O LI DO UL DO CABECALHO NA HORIZONTAL*/
 
-#cabecalho ul{
- display: flex;
- list-style: none;
- gap: 30px;
-
-
+#menu {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#div-icones img{
- width: 80px;
- height: 50px;
+
+#cabecalho ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;                 
+  padding: 10px;
+  margin: 12px;
+}
 
 
+#div-icons img {
+  width: 60px;              
+  height: 60px;
+  object-fit: contain;
 }
 
 #menu a:link{
- font-size: 1.3em;
- text-transform: uppercase ;
- text-decoration: none;
- color: var(--cor-link-menu)
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_lnk_menu);
+
 }
 
 #menu a:visited{
-    font-size: 1.4em;
-    text-transform: uppercase ;
-    text-decoration: none;
-    color: var(--cor-link-menu)
-   }
-
-   #menu a:hover{
     font-size: 1.3em;
-    text-transform: uppercase ;
+    text-transform: uppercase;
     text-decoration: none;
-    color: var(--cor-botao01)
-   }
+    color: var(--cor_lnk_menu);
 
-   #menu a:active{
+}
+
+#menu a:hover{
     font-size: 1.3em;
-    text-transform: uppercase ;
+    text-transform: uppercase;
     text-decoration: none;
-    color: var(--cor-botao-cor_vermellha)
-   }
-   /*FORMATANDO section PELO ID PESQUISA */
+    color: var(--cor_botao01);
+
+}
+
+#menu a:active{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_actev);
+
+}
+
 #pesquisa{
     width: 1000px;
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  #pesquisa input{
+}
+
+#pesquisa input{
     width: 600px;
     height: 80px;
     padding: 20px;
     border-radius: 8px;
     font-size: 2em;
-  }
+    background-color: var(--cor_lnk_menu);
+}
+
+#cards {
+  width: 1000px;
+  min-height: 600px;
+  margin: 20px 0px; 
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  justify-content: center; 
+  gap: 20px;
+}
+
+.card {
+  width: 300px; 
+  min-height: 420px; 
+  border: solid 1px var(--cor_principal);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  box-sizing: border-box; 
+}
+
+.card h2 {
+  text-transform: uppercase; 
+  letter-spacing: 5px;
+  margin: 10px 0px;
+}
+
+.card h3 {
+  margin: 20px;
+}
+
+.card button {
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain; 
+}
+
+
+#rodape{
+  width: 100%;
+  height: 300px;
+  background-color:bisque;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#dadosloja{
+  font-size: 0.8em;
+}
+
+#icones-sociais ul {
+  list-style: none;
+}
+
+#icones-sociais img{
+  width: 25px;
+  height: 25px;
+}
+
+#div-cartoes img{
+  width: 25px;
+  height: 25px;
+}
