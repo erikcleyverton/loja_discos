@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: roboto ;
+}
+
+:root{
+ --cor-principal: #f1db93;
+ --cor-botao01: #17e404;
+ --cor-link-menu: #1e9cc2;
+ --cor-botao-cor_vermellha: #f54949;
+}
+
+#geral{
+ margin: 20px;
+ padding: 20px;
+
+}
+/*CONFIGURANDO CABECALHO*/
+
+#cabecalho{
+  width: 100%;
+  background-color: var(--cor-principal);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+/*CONFIGURANDO A LOGO*/
+#logo img{
+ width: 250px;
+ height: 160px;
+}
+
+/*CONFIGURANDO O MENU*/
+
+#menu{
+ width: 600px;
+ height: 240px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+/*CONFIGURANDO O LI DO UL DO CABECALHO NA HORIZONTAL*/
+
+#cabecalho ul{
+ display: flex;
+ list-style: none;
+ gap: 30px;
+
+
+}
+#div-icones img{
+ width: 80px;
+ height: 50px;
+
+
+}
+
+#menu a:link{
+ font-size: 1.3em;
+ text-transform: uppercase ;
+ text-decoration: none;
+ color: var(--cor-link-menu)
+}
+
+#menu a:visited{
+    font-size: 1.4em;
+    text-transform: uppercase ;
+    text-decoration: none;
+    color: var(--cor-link-menu)
+   }
+
+   #menu a:hover{
+    font-size: 1.3em;
+    text-transform: uppercase ;
+    text-decoration: none;
+    color: var(--cor-botao01)
+   }
+
+   #menu a:active{
+    font-size: 1.3em;
+    text-transform: uppercase ;
+    text-decoration: none;
+    color: var(--cor-botao-cor_vermellha)
+   }
+   /*FORMATANDO section PELO ID PESQUISA */
+#pesquisa{
+    width: 1000px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #pesquisa input{
+    width: 600px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2em;
+  }
