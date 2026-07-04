@@ -2,14 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+ body{
     background-image: url('../imagens/');
     background-repeat: repeat;
     background-blend-mode: multiply;
-    margin: 0px;
-  
-    padding: 0px;
-    width: 100%;
+      margin: 0;
+      padding: 0;
+
 }
 
 
@@ -22,30 +21,31 @@ body{
 }
 
 :root{
-    --cor_principal:#e7c376;
-    --cor_botao01:#bfff8a;
-    --cor_lnk_menu:#ffffff;
-    --cor_actev:#31c3dd;
+    --cor_principal:#76c3e7;
+    --cor_botao01:#abc794;
+    --cor_lnk_menu:#fffbff;
+    --cor_actev:#406970;
 }
 
 #geral {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
+
 #cabecalho {
   width: 1000px;             
   height: 150px;            
   background-color: var(--cor_principal);
-  padding: 0 20px;
-  margin: 20px 0px;
+  padding: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px; 
   display: flex;
   justify-content: space-between; 
   align-items: center;
   box-sizing: border-box;
+  padding-top: 1px;
 }
 
 #logo img {
@@ -64,9 +64,9 @@ body{
 #cabecalho ul {
   display: flex;
   list-style: none;
-  gap: 50px;                 
-  padding: 10px;
-  margin: 12px;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
 }
 
 
@@ -128,12 +128,13 @@ body{
 #cards {
   width: 1000px;
   min-height: 600px;
-  margin: 20px 0px; 
+  margin: 20px auto;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(5, 1fr); 
   justify-content: center; 
-  gap: 20px;
+  gap: 15px; 
+  box-sizing: border-box;
 }
 
 .card {
@@ -177,13 +178,14 @@ body{
 }
 
 
-#rodape{
-  width: 100%;
-  height: 300px;
-  background-color:bisque;
+#rodape {
+  width: 100%;               
+  background-color: #a5e3ff; 
+  padding: 25px 0;           
+  margin-top: 60px;          
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;   
+  box-sizing: border-box;
 }
 
 #dadosloja{
@@ -202,4 +204,30 @@ body{
 #div-cartoes img{
   width: 25px;
   height: 25px;
+}
+
+/* ================= PÁGINA QUEM SOMOS ================= */
+
+#conteudo-sobre {
+  width: 100%;
+  max-width: 1000px; 
+  margin: 40px auto; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#conteudo-sobre h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #E7C376; 
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+#conteudo-sobre p {
+  font-size: 1.1rem;
+  line-height: 1.7; 
+  color: #2b1b1b; 
+  margin-bottom: 20px;
+  text-align: justify; 
 }
