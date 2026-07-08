@@ -36,16 +36,13 @@
 }
 
 #cabecalho {
-  width: 1000px;             
-  height: 150px;            
-  background-color: var(--cor_principal);
-  padding: 0px 0px 20px 0px;
-  margin: 0px 0px 20px 0px; 
+  background-color: #5dade2;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
+  padding: 15px 40px;
+  width: 100%;
   box-sizing: border-box;
-  padding-top: 1px;
 }
 
 #logo img {
@@ -230,4 +227,287 @@
   color: #2b1b1b; 
   margin-bottom: 20px;
   text-align: justify; 
+}
+/*------------ CARRINHO -------------*/
+
+.faixa-titulo-carrinho {
+  background-color: #d35400;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.conteiner-carrinho {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 30px;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.coluna-produtos {
+  flex: 2;
+}
+
+/* O novo bloco horizontal do carrinho */
+.item-carrinho {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.item-carrinho img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.item-carrinho h2 {
+  font-size: 1.1rem;
+  color: #333;
+  flex: 1;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+.item-carrinho h3 {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 15px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.item-carrinho label {
+  font-size: 0.95rem;
+  color: #333;
+  margin-right: 5px;
+}
+
+.item-carrinho input {
+  width: 55px;
+  padding: 6px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.item-carrinho button {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.item-carrinho button:hover {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+/* Coluna Lateral de Valores */
+.coluna-lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.caixa-valores {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.caixa-valores label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.caixa-valores input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.caixa-valores h4 {
+  background-color: #6cbce2;
+  color: white;
+  text-align: center;
+  padding: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.valor-exibido {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: right;
+  color: #333;
+}
+
+/* Botões de Ação */
+.btn-acao {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.btn-verde { 
+  background-color: #2ecc71; 
+}
+
+.btn-verde:hover {
+  background-color: #27ae60;
+}
+
+.btn-laranja { 
+  background-color: #e67e22; 
+}
+
+.btn-laranja:hover {
+  background-color: #d35400;
+}
+/* NAVBAR (Ajustado para combinar com a sua imagem azul) */
+.navbar-container {
+  background-color: #5dade2;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-link {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cart-img {
+  width: 35px;
+  height: 35px;
+}
+
+/* ÁREA DO LOGIN */
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  border: solid 1px var(--cor_principal);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.login-box h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #333;
+}
+
+#form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#form-login input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#form-login input:focus {
+  border-color: var(--cor_principal);
+}
+
+.btn-enviar {
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-enviar:hover {
+  background-color: #333333;
 }
