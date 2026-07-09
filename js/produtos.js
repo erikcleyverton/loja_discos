@@ -26,7 +26,7 @@ const produtosVinis = [
     },
     {
         id_produto: 4,
-        descricao_produto: "Kylie Minogue – Tension",
+        descricao_produto: "Kylie Minogue – Body language",
         caminho_da_imagem: "imagens/KYLIE_MINOGUE_VINIL.jpg",
         valor_unitario: 280.00,
         id_secao: 1,
@@ -44,7 +44,7 @@ const produtosVinis = [
     },
     {
         id_produto: 6,
-        descricao_produto: "Ethel Cain – Preacher's Daughter",
+        descricao_produto: "Ethel Cain –  Willoughby Tucker, I'll Always Love You",
         caminho_da_imagem: "imagens/ETHEL_CAIN_VINIL.jpg",
         valor_unitario: 315.00,
         id_secao: 2,
@@ -67,7 +67,7 @@ const produtosVinis = [
         nome_secao: "Rock & Alternativo"
     },
 
-    // SECÇÃO 3: MPB & Clássicos Nacionais (id_secao: 3)
+    
     {
         id_produto: 9,
         descricao_produto: "Gal Costa – Gal Costa (1969)",
@@ -78,7 +78,7 @@ const produtosVinis = [
     },
     {
         id_produto: 10,
-        descricao_produto: "Tim Maia – Tim Maia (1970)",
+        descricao_produto: "Kate bush - Hounds of love (1970)",
         caminho_da_imagem: "imagens/TIM_MAIA_VINIL.jpg",
         valor_unitario: 210.00,
         id_secao: 3,
@@ -86,26 +86,25 @@ const produtosVinis = [
     },
     {
         id_produto: 11,
-        descricao_produto: "Vanusa - Manhas de Setembro",
-        caminho_da_imagem: "imagens/GAL_COSTA_VINIL.jpg", // Reutilizando imagem existente como pedido
-        valor_unitario: 185.00,
+        descricao_produto: "CARLY RAE JEPSEN - DAY AND NIGHT ",
+        caminho_da_imagem: "imagens/dayandnight", 
         id_secao: 3,
         nome_secao: "MPB & Clássicos Nacionais"
     },
     {
         id_produto: 12,
-        descricao_produto: "Jorge Ben Jor – A Tábua de Esmeralda",
-        caminho_da_imagem: "imagens/TIM_MAIA_VINIL.jpg", // Reutilizando imagem existente como pedido
+        descricao_produto: "Elsa soares",
+        caminho_da_imagem: "imagens/Elsa soares", 
         valor_unitario: 225.00,
         id_secao: 3,
         nome_secao: "MPB & Clássicos Nacionais"
     },
 
-    // SECÇÃO 4: Pop Clássico & Ícones (id_secao: 4)
+    // SECÇÃO 4: Pop Clássico &  Mpb Ícones (id_secao: 4)
     {
         id_produto: 13,
-        descricao_produto: "Michael Jackson - Thriller",
-        caminho_da_imagem: "imagens/DISCO_VINIL_MICHAEL_JACKSON.jpg",
+        descricao_produto: "Maria bethania",
+        caminho_da_imagem: "imagens/Maria bethania",
         valor_unitario: 310.00,
         id_secao: 4,
         nome_secao: "Pop Clássico & Ícones"
