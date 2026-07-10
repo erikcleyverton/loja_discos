@@ -109,3 +109,26 @@ objProdutos.forEach((elem, i) => {
 
 }
 montandoCards(produtos)
+
+// Captura o input de pesquisa do HTML
+const inputPesquisa = document.querySelector('#pesquisa');
+
+// Ouve o que o usuário digita
+inputPesquisa.addEventListener('input', (evento) => {
+    // Pega o texto digitado e transforma em minúsculo para não diferenciar maiúsculas/minúsculas
+    const termoPesquisa = evento.target.value.toLowerCase();
+
+    // Filtra a lista de produtos baseada no termo pesquisado
+    const produtosFiltradosPorNome = produtos.filter(elem => {
+        // Ignora o objeto de seção "TODOS" da busca
+        if (elem.id_secao === 0 && !elem.descricao_produto) {
+            return false;
+        }
+        
+        // Verifica se o produto tem uma descrição e se ela contém o termo pesquisado
+        return elem.descricao_produto && elem.descricao_produto.toLowerCase().includes(termoPesquisa);
+    });
+
+    // Atualiza a tela chamando a sua função existente com os produtos filtrados
+    montandoCards(produtosFiltradosPorNome);
+});
