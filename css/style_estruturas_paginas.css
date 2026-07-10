@@ -511,3 +511,12 @@
 .btn-enviar:hover {
   background-color: #333333;
 }
+ 
+#nav-secoes{
+ padding: 20px;
+ margin: 10px;
+ display: flex;
+ justify-content: center;;
+ padding: 15px 40px;
+ width: 100%;
+}
