@@ -6,31 +6,7 @@ const listarProdutos = () => {
     section_cards.innerHTML = '';
 
     produtos.forEach((elem, i) => {
-        const divCard = document.createElement('div');
-        divCard.setAttribute('class', 'card');
-
-        const imgProduto = document.createElement('img');
-        imgProduto.setAttribute('src', elem.caminho_da_imagem);
-        imgProduto.setAttribute('alt', elem.descricao_produto);
-        imgProduto.setAttribute('class', 'img_card');
-
-        const h2Titulo = document.createElement('h2');
-        h2Titulo.innerHTML = elem.descricao_produto;
-
-        const h3Valor = document.createElement('h3');
-        divValor.setAttribute('class', 'valor_card');
-        divValor.innerHTML = `R$ ${parseFloat(elem.valor_unitario).toFixed(2).replace('.', ',')}`;
-
-        const btnCard = document.createElement('button');
-        btnCard.setAttribute('class', 'btn_card');
-        btnCard.innerHTML = 'Adicionar';
-
-        divCard.appendChild(imgProduto);
-        divCard.appendChild(h2Titulo);
-        divCard.appendChild(divValor);
-        divCard.appendChild(btnCard);
-
-        section_cards.appendChild(divCard);
+    
     });
 }
 
@@ -39,7 +15,7 @@ listarProdutos()
 //FILTRANDO AS SEÇOES COM A COLECAO map
 const listarSecoes = () => {
     //CRIANDO A COLECAO MAP
-   const secoesFiltrada = new map()
+   const secoesFiltrada = new Map()
     
    //PERCORRENDO O ARRAY PRODUTOS E CRIANDO SECOES
     produtos.forEach((elem, i) => {
@@ -71,9 +47,14 @@ const montarSecoes = () => {
         aSecao.setAttribute('class', 'lnk-secao')
         aSecao.innerHTML = elem.nome_secao
      //CAPTURANDO CLICK DOS LINKS 
-        aSecao.addEventListener('click', () => {
-            //PARA TESTE
-            console.log(elem.id_secao)
+        aSecao.addEventListener('click', (evento) => {
+            evento.preventDefault(); // Impede o comportamento padrão do '#'
+            
+            // CHAMANDO A FUNCAO PRODUTOS FILTRADOS QUE VOCÊ CRIOU
+            const resultadoFiltro = produtosFiltrados(elem.id_secao);
+            
+            // CHAMANDO A FUNÇÃO DE MONTAR CARDS COM O RESULTADO DO FILTRO
+            montandoCards(resultadoFiltro);
         })
      //ADICIONANDO ELEMENTO FILHO a NO ELEMENTO li
         liSecao.appendChild(aSecao)
@@ -84,3 +65,47 @@ const montarSecoes = () => {
 }
 
 montarSecoes()
+//FILTRANDO PRODUTOS
+const produtosFiltrados = (idSecao) => {
+
+    return idSecao === 0 ? produtos : produtos.filter(elem => elem.id_secao === idSecao) 
+
+
+}
+
+//MONTANDO CARDS
+const montandoCards = (objProdutos) => {
+section_cards.innerHTML = ''
+
+objProdutos.forEach((elem, i) => {
+
+    const divCard = document.createElement('div');
+        divCard.setAttribute('class', 'card');
+
+        const imgProduto = document.createElement('img');
+        imgProduto.setAttribute('src', elem.caminho_da_imagem);
+        imgProduto.setAttribute('alt', elem.descricao_produto);
+        imgProduto.setAttribute('class', 'img_card');
+
+        const h2Titulo = document.createElement('h2');
+        h2Titulo.innerHTML = elem.descricao_produto;
+
+        const h3Valor = document.createElement('h3');
+        h3Valor.setAttribute('class', 'valor_card'); 
+        h3Valor.innerHTML = `R$ ${parseFloat(elem.valor_unitario).toFixed(2).replace('.', ',')}`; // Corrigido de divValor para h3Valor
+
+        const btnCard = document.createElement('button');
+        btnCard.setAttribute('class', 'btn_card');
+        btnCard.innerHTML = 'Adicionar';
+
+        divCard.appendChild(imgProduto);
+        divCard.appendChild(h2Titulo);
+        divCard.appendChild(h3Valor); 
+        divCard.appendChild(btnCard);
+
+        section_cards.appendChild(divCard)
+
+})
+
+}
+montandoCards(produtos)
