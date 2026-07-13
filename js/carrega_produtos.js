@@ -92,11 +92,16 @@ objProdutos.forEach((elem, i) => {
 
         const h3Valor = document.createElement('h3');
         h3Valor.setAttribute('class', 'valor_card'); 
-        h3Valor.innerHTML = `R$ ${parseFloat(elem.valor_unitario).toFixed(2).replace('.', ',')}`; // Corrigido de divValor para h3Valor
-
+        h3Valor.innerHTML = `R$ ${parseFloat(elem.valor_unitario).toFixed(2).replace('.', ',')}`; 
         const btnCard = document.createElement('button');
         btnCard.setAttribute('class', 'btn_card');
         btnCard.innerHTML = 'Adicionar';
+
+      
+        btnCard.addEventListener('click', () =>{
+            //REDIRECIONA PARA PAGINA HTML
+         window.location.href = "/carrinho.html"
+        })
 
         divCard.appendChild(imgProduto);
         divCard.appendChild(h2Titulo);
