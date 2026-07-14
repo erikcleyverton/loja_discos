@@ -1,6 +1,6 @@
 import {produtos} from"./produtos.js"; 
 //IMPORTANDO O A ARROW FUNCTION addItem
-import {addItem} from "./carrinho.js";
+import {addItem} from "/paginas/carrinho.js";
 
 const section_cards = document.querySelector('#cards');
 

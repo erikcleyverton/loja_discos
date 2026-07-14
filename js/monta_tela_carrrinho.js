@@ -1,21 +1,4 @@
-// CRIANDO ARRAY DE ITENS CARRINHO
-
-//
-const itensCarrinho = JSON.parse(localStorage.getItem('itensSessao')) || []
-
-//FUNÇAÕ PARA ADICIONAR O ITEM NO ARRAY
-const addItem = (objItem) => {
-      itensCarrinho.push(objItem)
-
-      localStorage.setItem('itensSessao', itensCarrinho)
-}
-
-//LISTAR ITENS DO CARRINHO
-const listItens = () =>{
-    const itensSelecionado = JSON.stringify(localStorage.getItem('itensSessao'))
-    return itensCarrinho
-
-}
+import {listItens} from "./carrinho.js"
 
 //MONTANDO A TELA CARRINHO
 const montaTelaCarrinho = () => {
