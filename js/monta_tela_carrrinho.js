@@ -1,11 +1,13 @@
-import {listItens} from "./carrinho.js"
+import { listItens } from "./carrinho.js"
 
 //MONTANDO A TELA CARRINHO
 const montaTelaCarrinho = () => {
 
     //PEGANDO ELEMENTOS DO DOM 
-    const sectionItensCarrinho = document.querySelector('#itens-carrinho')
-     
+    const sectionItensCarrinho = document.querySelector('.coluna-produtos')
+
+    sectionItensCarrinho.innerHTML = ""
+
     listItens().forEach((elem, i) => {
         const sectionItem = document.createElement('section')
         sectionItem.setAttribute('class', 'item')
@@ -15,10 +17,11 @@ const montaTelaCarrinho = () => {
         <input type="number" name='quant${i}' id='quant${i}' class="input-item" value=${1}>
         <p class='tot-item'>${elem.valor_unitario * 1}</p>
         <img src="../imagens/icones/remover.png" alt="" class="img-remover">`
-    
+
         sectionItensCarrinho.appendChild(sectionItem)
     });
-    
+
 }
 
-export {addItem}
+
+montaTelaCarrinho()
