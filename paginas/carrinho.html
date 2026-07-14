@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANCETERIA - Carrinho de Compras</title>
+    <link rel="shortcut icon" href="imagens/icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style_estruturas_paginas.css">
+</head>
+<body>
+
+    <main id="geral">
+        
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imagens/icones/gravacao-de-vinil-um-classico-atemporal-da-musica.png" alt="logo">
+                </a>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html" class="lnk_menu">HOME</a></li>
+                    <li><a href="cadastro.html" class="lnk_menu">CADASTRO</a></li>
+                    <li><a href="sobre.html" class="lnk_menu">SOBRE</a></li>
+                </ul>
+            </nav>
+            <div id="div-icons">
+                <ul>
+                    <li><a href="login.html" class="lnk_icone"><img src="imagens/icones/usuario.png" alt="Login"></a></li>
+                    <li><a href="carrinho.html" class="lnk_icone"><img src="imagens/icones/carrinho.png" alt="Carrinho"></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="faixa-titulo-carrinho">
+            Carrinho de Compras
+        </div>
+
+        <div class="conteiner-carrinho">
+            
+            <section class="coluna-produtos">
+                
+                <div class="item-carrinho">
+                    <img src="imagens/CAROLINE_VINIL.jpg" alt="VINIL CAROLINE">
+                    <h2>Caroline Polachek – Desire, Everasking Edition</h2> 
+                    <h3>R$ 290,00 Unidade</h3>
+                    <label>Quantidade:</label>
+                    <input type="number" value="1" min="1">
+                    <h3>Subtotal: R$ 290,00</h3>
+                    <button>Remover</button> 
+                </div> 
+                
+                <div class="item-carrinho">
+                    <img src="imagens/Confessions2.jpg" alt="Madonna vinil">
+                    <h2>Madonna – Confessions 2</h2> 
+                    <h3>R$ 360,00 Unidade</h3>
+                    <label>Quantidade:</label>
+                    <input type="number" value="1" min="1">
+                    <h3>Subtotal: R$ 360,00</h3>
+                    <button>Remover</button> 
+                </div> 
+                
+                <div class="item-carrinho">
+                    <img src="imagens/COCTEAU_TWINS_VINIL.jpg" alt="VINIL Cocteau twins">
+                    <h2>Cocteau twins – Treasure Edition</h2> 
+                    <h3>R$ 234,00 Unidade</h3>
+                    <label>Quantidade:</label>
+                    <input type="number" value="1" min="1">
+                    <h3>Subtotal: R$ 234,00</h3>
+                    <button>Remover</button> 
+                </div> 
+                
+                <div class="item-carrinho">
+                    <img src="imagens/DISCO_VINIL_MICHAEL_JACKSON.jpg" alt="Vinil">
+                    <h2>Michael Jackson - Thriller</h2> 
+                    <h3>R$ 260,00 Unidade</h3>
+                    <label>Quantidade:</label>
+                    <input type="number" value="1" min="1">
+                    <h3>Subtotal: R$ 310,00</h3>
+                    <button>Remover</button> 
+                </div> 
+                
+                <div class="item-carrinho">
+                    <img src="imagens/GAL_COSTA_VINIL.jpg" alt="Gal costa">
+                    <h2>Gal costa – Gal costa</h2> 
+                    <h3>R$ 190,00 Unidade</h3>
+                    <label>Quantidade:</label>
+                    <input type="number" value="1" min="1">
+                    <h3>Subtotal: R$ 190,00</h3>
+                    <button>Remover</button> 
+                </div>
+            </section>
+
+            <aside class="coluna-lateral">
+                
+                <div class="caixa-valores">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" placeholder="Digite seu CEP">
+                </div>
+
+                <div class="caixa-valores">
+                    <h4>VALOR TOTAL</h4>
+                    <div class="valor-exibido">R$ 1.384,00</div>
+                </div>
+
+                <div class="caixa-valores">
+                    <h4>VALOR FRETE</h4>
+                    <div class="valor-exibido">R$ 45,00</div>
+                </div>
+
+                <div class="caixa-valores">
+                    <h4>TOTAL A PAGAR</h4>
+                    <div class="valor-exibido">R$ 1.384,00</div>
+                </div>
+
+                <button class="btn-acao btn-verde">Continuar Compras</button> 
+                <button class="btn-acao btn-laranja">Finalizar Compra</button> 
+                
+            </aside>
+
+        </div>
+
+        <footer id="rodape">
+            <div id="dadosloja">
+                <h2>Rua 23 inter, 131 - Jardins </h2>
+                <h1>Aracaju - Sergipe</h1>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
