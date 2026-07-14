@@ -1,4 +1,6 @@
 import {produtos} from"./produtos.js"; 
+//IMPORTANDO O A ARROW FUNCTION addItem
+import {addItem} from "./carrinho.js";
 
 const section_cards = document.querySelector('#cards');
 
@@ -99,7 +101,11 @@ objProdutos.forEach((elem, i) => {
 
       
         btnCard.addEventListener('click', () =>{
-            //REDIRECIONA PARA PAGINA HTML
+           //ADICIONANDO UM OBJETO NO CARRINHO
+           addItem(elem) 
+
+
+            //REDIRECIONA PARA PAGINA CARRINHO.HTML
          window.location.href = "/carrinho.html"
         })
 
