@@ -551,3 +551,14 @@
   color: #ffffff;
   background-color: #000000;
 }
+
+.img-remover {
+  width: 14px;
+  height: 10px;
+  
+} 
+
+.img-remover:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
