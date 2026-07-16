@@ -88,6 +88,7 @@ const produtos = [
         id_produto: 11,
         descricao_produto: "CARLY RAE JEPSEN - DAY AND NIGHT ",
         caminho_da_imagem: "../../imagens/dayandnight.jpg", 
+        valor_unitario: 255.00,
         id_secao: 4,
         nome_secao: "Pop Clássico & Ícones"
     },

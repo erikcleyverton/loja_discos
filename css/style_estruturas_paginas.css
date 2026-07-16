@@ -247,13 +247,15 @@
   gap: 30px;
   padding: 0 20px;
   align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .coluna-produtos {
   flex: 2;
+  min-width: 500px;
 }
 
-/* O novo bloco horizontal do carrinho */
+
 .item-carrinho {
   background: white;
   border: 1px solid #ddd;
@@ -395,7 +397,7 @@
 .btn-laranja:hover {
   background-color: #d35400;
 }
-/* NAVBAR (Ajustado para combinar com a sua imagem azul) */
+
 .navbar-container {
   background-color: #5dade2;
   width: 100%;
@@ -553,12 +555,14 @@
 }
 
 .img-remover {
-  width: 14px;
-  height: 10px;
-  
-} 
+  width: 30px !important; 
+  height: 30px !important; 
+  cursor: pointer; 
+}
 
 .img-remover:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   opacity: 1;
+  
 }
+
