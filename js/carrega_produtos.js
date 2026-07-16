@@ -75,13 +75,17 @@ const produtosFiltrados = (idSecao) => {
 
 }
 
-//MONTANDO CARDS
+// MONTANDO CARDS
 const montandoCards = (objProdutos) => {
-section_cards.innerHTML = ''
+    section_cards.innerHTML = ''
 
-objProdutos.forEach((elem, i) => {
+    objProdutos.forEach((elem, i) => {
+    
+        if (!elem.descricao_produto || !elem.caminho_da_imagem) {
+            return; 
+        }
 
-    const divCard = document.createElement('div');
+        const divCard = document.createElement('div');
         divCard.setAttribute('class', 'card');
 
         const imgProduto = document.createElement('img');
@@ -95,18 +99,14 @@ objProdutos.forEach((elem, i) => {
         const h3Valor = document.createElement('h3');
         h3Valor.setAttribute('class', 'valor_card'); 
         h3Valor.innerHTML = `R$ ${parseFloat(elem.valor_unitario).toFixed(2).replace('.', ',')}`; 
+        
         const btnCard = document.createElement('button');
         btnCard.setAttribute('class', 'btn_card');
         btnCard.innerHTML = 'Adicionar';
 
-      
         btnCard.addEventListener('click', () =>{
-           //ADICIONANDO UM OBJETO NO CARRINHO
            addItem(elem) 
-
-
-            //REDIRECIONA PARA PAGINA CARRINHO.HTML
-         window.location.href = "./paginas/carrinho.html"
+           window.location.href = "./paginas/carrinho.html"
         })
 
         divCard.appendChild(imgProduto);
@@ -115,8 +115,7 @@ objProdutos.forEach((elem, i) => {
         divCard.appendChild(btnCard);
 
         section_cards.appendChild(divCard)
-
-})
+    })
 
 }
 montandoCards(produtos)

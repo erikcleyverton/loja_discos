@@ -1,7 +1,7 @@
 // CRIANDO O ARRAY DE ITENS DO CARRINHO
 const itensCarrinho = JSON.parse(localStorage.getItem('itensSessao')) || []
 
-// CRIANDO ARROW ITEM (Igual ao do professor)
+// CRIANDO ARROW ITEM
 const fObjItem = (objProduto) => {
     const item = {
         id_produto: objProduto.id_produto,
@@ -22,10 +22,10 @@ const addItem = (objItem) => {
     const index = itensCarrinho.findIndex(elem => elem && elem.id_produto == objItem.id_produto)
 
     if (index > -1) {
-        // 2 Se já existe, olhamos ele no array e somamos +1 na quantidade 📈
+        // 2 Se já existe, olhamos ele no array e somamos +1 na quantidade 
         itensCarrinho[index].quantidade += 1
     } else {
-        // 3. Se não existe, criamos o item usando fObjItem e adicionamos normalmente 🆕
+        // 3. Se não existe, criamos o item usando fObjItem e adicionamos normalmente 
         itensCarrinho.push(fObjItem(objItem))
     }
 
