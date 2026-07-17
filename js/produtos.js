@@ -2,7 +2,7 @@ const produtos = [
     // SECÇÃO 1: Pop & Dance (id_secao: 1)
     {
         id_produto: 1,
-        descricao_produto: "Caroline Polachek – Desire, Everasking Edition",
+        descricao_produto: "CAROLINE POLACHEK– DESIRE, EVARASKING EDITION",
         caminho_da_imagem: "../../imagens/CAROLINE_VINIL.jpg",
         valor_unitario: 290.00,
         id_secao: 1,
@@ -10,7 +10,7 @@ const produtos = [
     },
     {
         id_produto: 2,
-        descricao_produto: "Madonna – Confessions 2",
+        descricao_produto: "MADONNA - CONFESSIONS 2",
         caminho_da_imagem: "../../imagens/Confessions2.jpg",
         valor_unitario: 360.00,
         id_secao: 1,
@@ -18,7 +18,7 @@ const produtos = [
     },
     {
         id_produto: 3,
-        descricao_produto: "Madonna – Confessions on a Dance Floor",
+        descricao_produto: "MADONNA - CONFESSIONS ON A DANCE FLOOR",
         caminho_da_imagem: "../../imagens/confessions.jpg",
         valor_unitario: 345.00,
         id_secao: 1,
@@ -26,7 +26,7 @@ const produtos = [
     },
     {
         id_produto: 4,
-        descricao_produto: "Kylie Minogue – Body language",
+        descricao_produto: "KYLIE MINOGUE - BODY LANGUAGE",
         caminho_da_imagem: "../../imagens/KYLIE_MINOGUE_VINIL.jpg",
         valor_unitario: 280.00,
         id_secao: 1,
@@ -36,7 +36,7 @@ const produtos = [
     // SECÇÃO 2: Rock & Alternativo (id_secao: 2)
     {
         id_produto: 5,
-        descricao_produto: "Cocteau Twins – Treasure Edition",
+        descricao_produto: "COCTEAU TWINS -TREASURE",
         caminho_da_imagem: "../../imagens/COCTEAU_TWINS_VINIL.jpg",
         valor_unitario: 234.00,
         id_secao: 2,
@@ -44,7 +44,7 @@ const produtos = [
     },
     {
         id_produto: 6,
-        descricao_produto: "Ethel Cain –  Willoughby Tucker, I'll Always Love You",
+        descricao_produto: "ETHEL CAIN - WILLOUGHBY TUCKER, I LL ALWAYS LOVE YOU",
         caminho_da_imagem: "../../imagens/ETHEL_CAIN_VINIL.jpg",
         valor_unitario: 315.00,
         id_secao: 2,
@@ -52,7 +52,7 @@ const produtos = [
     },
     {
         id_produto: 7,
-        descricao_produto: "Deftones – Diamond Eyes",
+        descricao_produto: "DEFTONES - DIAMOND EYES",
         caminho_da_imagem: "../../imagens/VINIL_DEFTONES.jpg",
         valor_unitario: 295.00,
         id_secao: 2,
@@ -60,7 +60,7 @@ const produtos = [
     },
     {
         id_produto: 8,
-        descricao_produto: "Cocteau Twins – Heaven or Las Vegas",
+        descricao_produto: "COCTEAU TWINS - HEAVEN OR LAS VEGAS",
         caminho_da_imagem: "../../imagens/HEAVEN_OR_LAS_VEGAS_VINIL.jpg",
         valor_unitario: 265.00,
         id_secao: 2,
@@ -70,7 +70,7 @@ const produtos = [
     
     {
         id_produto: 9,
-        descricao_produto: "Gal Costa – Gal Costa (1969)",
+        descricao_produto: "GAL COSTA - GAL COSTA (1969)",
         caminho_da_imagem: "../../imagens/GAL_COSTA_VINIL.jpg",
         valor_unitario: 190.00,
         id_secao: 3,
@@ -78,7 +78,7 @@ const produtos = [
     },
     {
         id_produto: 10,
-        descricao_produto: "Kate bush - Hounds of love (1970)",
+        descricao_produto: "KATE BUSH - HOUNDS OF LOVE (1970)",
         caminho_da_imagem: "../../imagens/HOUNDSOFLOVE.JPG",
         valor_unitario: 210.00,
         id_secao: 2,
@@ -94,7 +94,7 @@ const produtos = [
     },
     {
         id_produto: 12,
-        descricao_produto: "Elsa soares",
+        descricao_produto: "ELA SOARES - PEDEM PASSAGEM",
         caminho_da_imagem: "../../imagens/elsa_soares.jpg", 
         valor_unitario: 225.00,
         id_secao: 3,
@@ -104,7 +104,7 @@ const produtos = [
     // SECÇÃO 4: Pop Clássico &  Mpb Ícones (id_secao: 4)
     {
         id_produto: 13,
-        descricao_produto: "Maria bethania",
+        descricao_produto: "MARIA BETHANIA - TALISMÃ",
         caminho_da_imagem: "../../imagens/maria_bethania.jpg",
         valor_unitario: 310.00,
         id_secao: 3,
@@ -112,7 +112,7 @@ const produtos = [
     },
     {
         id_produto: 14,
-        descricao_produto: "Madonna – True Blue",
+        descricao_produto: "MADONNA - TRUE BLUE",
         caminho_da_imagem: "../../imagens/TRUE_BLUE_VINIL.jpg",
         valor_unitario: 280.00,
         id_secao: 4,
@@ -120,7 +120,7 @@ const produtos = [
     },
     {
         id_produto: 15,
-        descricao_produto: "Madonna – Ray of Light",
+        descricao_produto: "MADONNA – RAY OF LIGHT",
         caminho_da_imagem: "../../imagens/RAY_OF_LIGHT_VINIL.jpg",
         valor_unitario: 320.00,
         id_secao: 4,
@@ -128,7 +128,7 @@ const produtos = [
     },
     {
         id_produto: 16,
-        descricao_produto: "Caroline Polachek – Desire Solo Vinyl",
+        descricao_produto: "CAROLINE POLACHEK – DESIRE, I WANT TO TURN INTO YOU",
         caminho_da_imagem: "../../imagens/Desire_vinil.jpg",
         valor_unitario: 275.00,
         id_secao: 4,
@@ -138,7 +138,7 @@ const produtos = [
     // SECÇÃO 5: Indie & Pop Internacional (id_secao: 5)
     {
         id_produto: 17,
-        descricao_produto: "Rosalía –Lux",
+        descricao_produto: "ROSALÍA - LUX",
         caminho_da_imagem: "../imagens/ROSALIA_VINIl.jpg",
         valor_unitario: 290.00,
         id_secao: 5,
@@ -146,7 +146,7 @@ const produtos = [
     },
     {
         id_produto: 18,
-        descricao_produto: "Cortis – Cortis Vinyl Special",
+        descricao_produto: "CORTIS – COLORS OUTSIDE THE LINES",
         caminho_da_imagem: "../../imagens/CORTIS_VINIL.jpg",
         valor_unitario: 240.00,
         id_secao: 5,
@@ -154,7 +154,7 @@ const produtos = [
     },
     {
         id_produto: 19,
-        descricao_produto: "chico buarque",
+        descricao_produto: "CHICO BUARQUE  - CHICO BUARQUE",
         caminho_da_imagem: "../../imagens/chico_buarque.jpg",
         valor_unitario: 310.00,
         id_secao: 3,
